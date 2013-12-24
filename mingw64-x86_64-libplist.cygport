@@ -1,0 +1,14 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross cmake
+
+NAME="mingw64-x86_64-libplist"
+VERSION=1.10
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Apple Property List library for Win64 toolchain"
+DESCRIPTION="Library for handling Apple Binary and XML Property Lists"
+HOMEPAGE="http://www.libimobiledevice.org/"
+SRC_URI="http://www.libimobiledevice.org/downloads/libplist-${VERSION}.tar.bz2"
+SRC_DIR="libplist-${VERSION}"
+
+MAKEOPTS+=" -j1"
